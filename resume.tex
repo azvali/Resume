@@ -1,0 +1,181 @@
+%-------------------------
+% Resume in Latex
+% Author : Yousef Mardrosyan
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Yousef Mardrosyan} \\ \vspace{1pt}
+    \small (248)-808-0446 $|$ \href{mailto:yousefm2787@gmail.com}{\underline{yousefm2787@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/yousef-mardrosyan-3b38b4268/}{\underline{linkedin.com/in/yousef-mardrosyan-3b38b4268}} $|$
+    \href{https://github.com/azvali}{\underline{github.com/azvali}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Oakland University}{Rochester Hills, MI}
+      {Bachelor of Science in Computer Science}{Dec 2024}
+      \resumeItemListStart
+        \resumeItem{GPA: 3.61/4.0}
+        \resumeItem{Dean's List: Fall 2021 – Fall 2024}
+      \resumeItemListEnd
+    \textbf{Citizenship:} U.S. Citizen; eligible for DoD Secret Clearance
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineering Intern}{June 2024 – Aug 2024}
+      {Department of Homeland Security}{}
+      \resumeItemListStart
+        \resumeItem{Redesigned the Chief of Staff's landing page (serving \textbf{60,000+} daily users), improving UI/UX and ensuring Section 508 compliance.}
+        \resumeItem{Contributed to Agile sprints by delivering wireframes in Figma and implementing iterative user feedback.}
+        \resumeItem{Assisted with internal tooling using Git and Confluence for version control and documentation.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Research Assistant}{May 2023 – June 2024}
+      {Oakland University}{Rochester Hills, MI}
+      \resumeItemListStart
+        \resumeItem{Created a Python script to auto-generate UML diagrams for \textbf{50+} student projects, saving \textbf{20+} hours/semester.}
+        \resumeItem{Partnered with \textbf{5} PhD students to discover and document vulnerabilities in PyTorch and TensorFlow.}
+        \resumeItem{Utilized JIRA and Git for version control and collaborative research workflows.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Teaching Assistant, Computer Science}{Jan 2024 – May 2024}
+      {Oakland University}{Rochester Hills, MI}
+      \resumeItemListStart
+        \resumeItem{Co-taught C\# fundamentals to \textbf{60+} students, helping improve average exam scores by \textbf{15\%}.}
+        \resumeItem{Held weekly office hours, assisting \textbf{20+} students with debugging and algorithmic concepts.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Vendora} $|$ \emph{React, C\#, ASP.NET Core, PostgreSQL} $|$ \href{https://github.com/azvali/Vendora}{\underline{GitHub}}}{} 
+      \resumeItemListStart
+        \resumeItem{Built a full-stack e-commerce platform with user accounts, product listings, image uploads, and browsing.}
+        \resumeItem{Developed a secure C\# backend (ASP.NET Core) with JWT auth and API responses optimized for \textbf{$<$200ms}.}
+        \resumeItem{Designed RESTful APIs using PostgreSQL (Npgsql) and OOP for a modular, maintainable data layer.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Whisp} $|$ \emph{React, Flask, PostgreSQL, Socket.IO} $|$ \href{https://github.com/azvali/Whisp}{\underline{GitHub}}}{}
+      \resumeItemListStart
+        \resumeItem{Engineered a real-time chat app (Socket.IO) with an average message latency under \textbf{100ms}.}
+        \resumeItem{Implemented secure user authentication with JWT, password hashing, and account recovery.}
+        \resumeItem{Created a Flask RESTful API for user, message, and friend management.}
+        \resumeItem{Developed a React front-end for login, chat, and contact features.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Fooducate} $|$ \emph{React, Firebase, OpenAI API, Node.js} $|$ \href{https://github.com/azvali/Fooducate2}{\underline{GitHub}}}{}
+      \resumeItemListStart
+        \resumeItem{Built a mobile nutrition app to analyze food images for nutritional data.}
+        \resumeItem{Integrated an AI diet coach (OpenAI API) providing personalized meal suggestions in under \textbf{2s}.}
+        \resumeItem{Used Firebase for secure authentication and real-time calorie tracking.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \item \small{
+    \textbf{Languages:} C\#, Python, JavaScript (ES6+), SQL, C++ \\
+    \textbf{Backend:} ASP.NET Core, Flask, Node.js, REST API Development, JWT Authentication, Socket.IO \\
+    \textbf{Frontend:} React, HTML/CSS, Responsive Design, Figma (Wireframing) \\
+    \textbf{Databases:} PostgreSQL, Firebase, Npgsql \\
+    \textbf{Tools \& Methodologies:} Git, GitHub, JIRA, Confluence, Agile, CI/CD, OOP
+  }
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
